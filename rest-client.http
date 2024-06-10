@@ -1,0 +1,36 @@
+###
+POST http://localhost:3000/tshirt/1
+Content-Type: application/json
+
+{
+    "logo": "ralph lauren"
+}
+
+###
+GET http://localhost:3000/api/products
+
+###
+GET http://localhost:3000/api/products/666512f2ed1072c25eb54b83
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "Combo IPA",
+    "quantity": 6,
+    "price": 29.99
+}
+
+###
+PUT http://localhost:3000/api/products/666512f2ed1072c25eb54b83
+Content-Type: application/json
+
+{
+    "name": "Combo IPA",
+    "quantity": 6,
+    "price": 29.99
+}
+
+###
+DELETE http://localhost:3000/api/products/666512f2ed1072c25eb54b83
