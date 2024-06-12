@@ -34,3 +34,26 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/api/products/666512f2ed1072c25eb54b83
+
+###
+POST https://su14wnj4dk.execute-api.ap-southeast-2.amazonaws.com/dev/api/products
+Content-Type: application/json
+
+{
+    "name": "Onitsuka Tiger Year of the Tiger",
+    "quantity": 1,
+    "price": 100
+}
+
+###
+GET https://su14wnj4dk.execute-api.ap-southeast-2.amazonaws.com/dev/api/products
+
+###
+PUT https://su14wnj4dk.execute-api.ap-southeast-2.amazonaws.com/dev/api/products/66681d156b8b23bc3383f851
+Content-Type: application/json
+
+{
+    "name": "Pedro Moccasin",
+    "quantity": 1,
+    "price": 50
+}
